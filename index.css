@@ -252,7 +252,10 @@ textarea {
 }
 
 @media (max-width: 1150px) {
-  h1 {
+  * {
     font-size: 15px;
+    
+  h1 {
+    font-size: 150px;
   }
 }
