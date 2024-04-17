@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+body {
+  background: #fdf5c9;
+  position: relative;
+  margin: 0;
+}
+
+header {
+  background: black;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  padding: 0 10%;
+}
+
+header a {
+  color: white;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.web-body {
+  margin-bottom: 300px;
+}
+
+section {
+  min-height: 650px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 200px;
+  font-weight: 700;
+  padding-left: 15%;
+  margin: 0;
+  padding-top: 15%;
+}
+
+.hero-box {
+  width: 100%;
+  min-height: 700px;
+  position: relative;
+}
+
+.hero-text p {
+  padding-left: 15%;
+  padding-top: 0;
+}
+
+.cat {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  overflow: hidden;
+  border: 0;
+}
+
+.eyes {
+  display: flex;
+}
+
+.left-eye, .right-eye {
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 100%;
+  position: absolute;
+  box-shadow: inset 5px 5px 10px 10px rgb(39, 38, 38);
+  transform: scaleY(0);
+}
+
+.left-eye{
+  top: 20%;
+}
+
+.right-eye {
+  top: 21%;
+}
+
+.close-animation {
+  animation: close 1s linear infinite;
+}
+
+@keyframes close {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  100% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+}
+
+.left-eye {
+  left: 20%;
+}
+
+.right-eye {
+  right: 35%;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dryer-ball {
+  position: absolute;
+  width: 30%;
+}
+
+.contact-box {
+  position: absolute;
+  z-index: 50;
+  width: 40%;
+  height: 70%;
+  animation: spin 40S linear infinite; 
+}
+
+.contact-box:hover {
+  animation-play-state: paused;
+}
+
+.contact-box img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+.icon1 img, .icon2 img, .icon3 img, .icon4 img {
+  animation: rotate 40S linear infinite;
+}
+
+.icon2 img {
+  right: 0;
+}
+
+.icon3 img {
+  bottom: 0;
+}
+
+.icon4 img {
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.gmail {
+  min-height: 500px;
+}
+
+.gmail-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.contact-text p {
+  padding: 0 10%;
+}
+
+.gmail-box .form {
+  width: 50%;
+  height: 50%;
+}
+
+.gmail-box .form input, textarea {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.form button {
+  background: pink;
+  padding: 10px;
+  width: 50%
+}
+
+.button {
+  border-radius: 10px;
+}
+
+.footer {
+  height: 300px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 100%;
+  right: 0;
+}
+
+@media (max-width: 1150px) {
+  h1 {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  * {
+    font-size: 10px;
+  }
+
+  .cat {
+    position: relative;
+  }
+
+  .hero-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gmail {
+    min-height: 600px;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hello</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <header>
+      <div><a href="#home">home</a></div>
+      <div><a href="#contact">contact</a></div>
+      <div><a href="#gmail">request</a></div>
+    </header>
+
+    <div class="web-body">
+      <section class="hero" id="home">
+        <div class="hero-box">
+          <div class="hero-text">
+            <h1>Hello</h1>
+            <p>
+              hi everyone
+            </p>
+          </div>
+
+          <div class="cat">
+            <img src="images/cat.png">
+            <div class="eyes">
+              <div class="left-eye"></div>
+              <div class="right-eye"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="dryer-ball">
+          <img src="images/dryerball.png">
+        </div>
+
+        <div class="contact-box">
+          <a href="https://www.youtube.com/channel/UCXWZUND8O0KEtdRuQ6SIWtA"  target="_blank" class="icon1"><img src="icon/youtube_1384060.png"></a>
+          <a href="https://www.facebook.com/profile.php?id=61556687131727" target="_blank" class="icon2"><img src="icon/facebook_2504903.png"></a>
+          <a href="https://www.instagram.com/manhn261103/" target="_blank" class="icon3"><img src="icon/instagram_2111463.png"></a>
+          <a href="https://www.tiktok.com/@manhnguye260" target="_blank" class="icon4"><img src="icon/video_11104200.png"></a>
+        </div>
+      </section>
+
+      <section class="gmail" id="request">
+        <div class="gmail-box">
+          <div class="contact-text">
+            <p>
+              Em vẫn là sinh viên đang cần kiếm thêm để trang trải một số chi phí
+              các tình yêu (anh, chị, cô, bác, em) nào có nhu cầu làm poster, banner hay slide thuyết trình giá rẻ thì 
+              liên hệ em nhé, mọi người có thể nhắn yêu cầu qua gmail của em bên dưới (phần gmail là gmail của mọi người),
+               em lấy rẻ chỉ mấy chục nghìn thôi ạ, em sẽ chủ động nhắn lại hoặc mọi người có thể nhán em qua facebook nha
+            </p>
+          </div>
+
+          <div class="form">
+            <form method="POST" action="https://api.web3forms.com/submit">
+              <input type="hidden" name="access_key" value="5ed18cdc-6b80-40c6-a5c7-5368c35771de">
+              <input type="text" name="name" placeholder="họ và tên">
+              <input type="email" name="gmail" placeholder="gmail">
+              <textarea name="message" placeholder="mô tả"></textarea>
+              <button type="submit" class="button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
