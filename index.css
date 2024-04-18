@@ -92,15 +92,17 @@ h1 {
   position: absolute;
   background: rgb(56, 53, 53);
   box-shadow: inset 5px 5px 10px 10px rgb(39, 38, 38);
-  transform: scale(0);
+  transform: scaleY(0);
 }
 
 .left-eye{
   top: 20.4%;
+  left: 20%;
 }
 
 .right-eye {
   top: 20.8%;
+  right: 35%;
 }
 
 .close-animation {
@@ -122,14 +124,6 @@ h1 {
     transform: scaleY(0);
     transform-origin: top;
   }
-}
-
-.left-eye {
-  left: 20%;
-}
-
-.right-eye {
-  right: 35%;
 }
 
 .contact {
@@ -270,5 +264,107 @@ textarea {
 
   .gmail-box {
     padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    padding: 0;
+  }
+
+  .hero-text {
+    order: 2;
+  }
+
+  .hero-text p {
+    padding-left: 0;
+  }
+
+  .cat {
+    width: fit-content;
+    position: relative;
+    order: 1;
+    right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-box {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-box {
+    width: 50%;
+    height: 45%;
+  }
+  
+  .contact-box img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 425px) {
+  p {
+    text-align: center;
+  }
+
+  .left-eye, .right-eye {
+    width: 60px;
+    height: 60px;
+  }
+
+  .left-eye{
+    left: 20.2%;
+  }
+  
+  .right-eye {
+    top: 21%;
+    right: 35.5%;
+  }
+
+  .contact {
+    min-height: 400px;
+  }
+
+  .contact-box {
+    width: 50%;
+    height: 50%;
+  }
+
+  .gmail-box .form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 370px) {
+  .left-eye, .right-eye {
+    width: 55px;
+    height: 55px;
+  }
+
+  .left-eye{
+    left: 20.5%;
+  }
+  
+  .right-eye {
+    right: 35.8%;
+  }
+}
+
+@media (max-width: 350px) {
+  .left-eye, .right-eye {
+    width: 50px;
+    height: 50px;
   }
 }
