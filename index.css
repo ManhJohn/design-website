@@ -92,7 +92,7 @@ h1 {
   position: absolute;
   background: rgb(56, 53, 53);
   box-shadow: inset 5px 5px 10px 10px rgb(39, 38, 38);
-  transform: scaleY(0);
+  transform: scale(0);
 }
 
 .left-eye{
@@ -110,14 +110,14 @@ h1 {
 @keyframes close {
   0% {
     transform: scaleY(0);
-    transform-origin: top;
+    transform-origin: top; 
   }
 
   50% {
     transform: scaleY(1);
     transform-origin: top;
   }
-
+ 
   100% {
     transform: scaleY(0);
     transform-origin: top;
@@ -163,7 +163,7 @@ h1 {
 }
 
 .icon1 img, .icon2 img, .icon3 img, .icon4 img {
-  animation: rotate 40S linear infinite;
+  animation: rotate 40s linear infinite;
 }
 
 .icon2 img {
@@ -254,9 +254,21 @@ textarea {
 @media (max-width: 1150px) {
   * {
     font-size: 15px;
-  }
-  
+  } 
+
   h1 {
     font-size: 150px;
+  }
+  
+  .gmail {
+    margin-bottom: 15%;
+  }
+
+  .cat {
+    right: 5%;
+  }
+
+  .gmail-box {
+    padding-bottom: 5%;
   }
 }
