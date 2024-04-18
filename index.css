@@ -88,19 +88,19 @@ h1 {
 .left-eye, .right-eye {
   width: 70px;
   height: 70px;
-  background: black;
   border-radius: 100%;
   position: absolute;
+  background: rgb(56, 53, 53);
   box-shadow: inset -5px 5px 10px 10px rgb(39, 38, 38);
   transform: scaleY(0);
 }
 
 .left-eye{
-  top: 20%;
+  top: 20.5%;
 }
 
 .right-eye {
-  top: 20.5%;
+  top: 21%;
 }
 
 .close-animation {
