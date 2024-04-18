@@ -91,7 +91,7 @@ h1 {
   border-radius: 100%;
   position: absolute;
   background: rgb(56, 53, 53);
-  box-shadow: inset -5px 5px 10px 10px rgb(39, 38, 38);
+  box-shadow: inset 5px 5px 10px 10px rgb(39, 38, 38);
   transform: scaleY(0);
 }
 
